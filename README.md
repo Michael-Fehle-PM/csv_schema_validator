@@ -75,7 +75,7 @@ selling_price,numeric,true,,0,,,,prompt
 
 ## Why I built this
 
-The [CSV Audit Tool](https://github.com/MichaelF-PM/csv-audit-tool) in this portfolio tells you *what is wrong* with a dataset. This tool takes the next step: it tells you *what should be there*, compares the two, and gives you a structured way to resolve the gap.
+The [CSV Audit Tool](https://github.com/Michael-Fehle-PM/csv_audit_tool) in this portfolio tells you *what is wrong* with a dataset. This tool takes the next step: it tells you *what should be there*, compares the two, and gives you a structured way to resolve the gap.
 
 This mirrors how data quality works in production. A database has a schema – field types, constraints, permitted values – and any data entering the system is validated against it. In martech and fintech pipelines, violations need to be handled in one of three ways: fix automatically, escalate for human review, or reject outright. This tool makes that triage process explicit and auditable.
 
@@ -140,7 +140,7 @@ open index.html
 
 ## Related tools
 
-- [CSV Audit Tool](https://github.com/MichaelF-PM/csv-audit-tool) – structural data quality audit: nulls, duplicates, outliers, mixed delimiters, injection payloads
+- [CSV Audit Tool](https://github.com/Michael-Fehle-PM/csv_audit_tool) – structural data quality audit: nulls, duplicates, outliers, mixed delimiters, injection payloads
 
 ---
 
