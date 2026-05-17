@@ -1,0 +1,12 @@
+field_name,type,required,allowed_values,min,max,max_length,format,on_violation
+sku,text,true,,,,20,alphanumeric,reject
+product_name,text,true,,,,100,,prompt
+category,text,true,"apparel|homewares|electronics|beauty|food",,,,, prompt
+colour,text,false,,,,30,,prompt
+size,text,false,"XS|S|M|L|XL|XXL|ONE SIZE",,,,,prompt
+unit_cost,numeric,true,,0,,,,prompt
+selling_price,numeric,true,,0,,,,prompt
+stock_quantity,integer,true,,0,,,,prompt
+warehouse_location,text,false,,,,,warehouse,prompt
+supplier_id,text,true,,,,10,,reject
+last_updated,date,true,,,,,date-iso,auto

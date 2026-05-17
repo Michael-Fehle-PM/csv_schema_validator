@@ -1,0 +1,17 @@
+{
+  "name": "Inventory Record",
+  "description": "Martech inventory dataset schema – validates SKU, pricing, stock, and location fields.",
+  "fields": [
+    { "name": "sku", "type": "text", "required": true, "max_length": 20, "format": "alphanumeric", "on_violation": "reject" },
+    { "name": "product_name", "type": "text", "required": true, "max_length": 100, "on_violation": "prompt" },
+    { "name": "category", "type": "text", "required": true, "allowed_values": ["apparel", "homewares", "electronics", "beauty", "food"], "on_violation": "prompt" },
+    { "name": "colour", "type": "text", "required": false, "max_length": 30, "on_violation": "prompt" },
+    { "name": "size", "type": "text", "required": false, "allowed_values": ["XS", "S", "M", "L", "XL", "XXL", "ONE SIZE"], "on_violation": "prompt" },
+    { "name": "unit_cost", "type": "numeric", "required": true, "min": 0, "on_violation": "prompt" },
+    { "name": "selling_price", "type": "numeric", "required": true, "min": 0, "on_violation": "prompt" },
+    { "name": "stock_quantity", "type": "integer", "required": true, "min": 0, "on_violation": "prompt" },
+    { "name": "warehouse_location", "type": "text", "required": false, "format": "warehouse", "on_violation": "prompt" },
+    { "name": "supplier_id", "type": "text", "required": true, "max_length": 10, "on_violation": "reject" },
+    { "name": "last_updated", "type": "date", "required": true, "format": "date-iso", "on_violation": "auto" }
+  ]
+}
