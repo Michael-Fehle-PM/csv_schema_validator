@@ -135,6 +135,7 @@ open index.html
 - **Multi-sheet support** – validate Excel files with multiple tabs against separate schemas
 - **Schema export** – download the schema built in the UI as JSON or CSV for reuse
 - **Diff mode** – compare two versions of the same dataset against a shared schema and highlight what changed
+- **BYO schema** – build the schema directly in the UI without having to create it offsite and import it
 
 ---
 
